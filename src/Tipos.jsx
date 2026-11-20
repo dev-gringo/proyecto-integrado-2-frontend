@@ -9,7 +9,7 @@ export default function Tipos() {
     descripcion: ''
   });
 
-  const API_URL = 'http://localhost:4000/api/tipos';
+  const API_URL = 'https://proyecto-integrado-2-backend.onrender.com/api/tipos';
 
   const cargarTipos = () => {
     fetch(API_URL)

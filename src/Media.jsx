@@ -26,7 +26,7 @@ export default function Media() {
   };
 
   const [formData, setFormData] = useState(initialForm);
-  const API_URL = 'http://localhost:4000/api/media';
+  const API_URL = 'https://proyecto-integrado-2-backend.onrender.com/api/media';
 
   // Cargar películas y todos los catálogos relacionados
   const cargarTodo = () => {
@@ -35,10 +35,10 @@ export default function Media() {
       .then(data => setPeliculas(data))
       .catch(err => console.error("Error al cargar media:", err));
 
-    fetch('http://localhost:4000/api/generos').then(r => r.json()).then(setGeneros);
-    fetch('http://localhost:4000/api/directores').then(r => r.json()).then(setDirectores);
-    fetch('http://localhost:4000/api/productoras').then(r => r.json()).then(setProductoras);
-    fetch('http://localhost:4000/api/tipos').then(r => r.json()).then(setTipos);
+    fetch('https://proyecto-integrado-2-backend.onrender.com/api/generos').then(r => r.json()).then(setGeneros);
+    fetch('https://proyecto-integrado-2-backend.onrender.com/api/directores').then(r => r.json()).then(setDirectores);
+    fetch('https://proyecto-integrado-2-backend.onrender.com/api/productoras').then(r => r.json()).then(setProductoras);
+    fetch('https://proyecto-integrado-2-backend.onrender.com/api/tipos').then(r => r.json()).then(setTipos);
   };
 
   useEffect(() => {

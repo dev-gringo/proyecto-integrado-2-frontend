@@ -10,7 +10,7 @@ export default function Generos() {
     descripcion: ''
   });
 
-  const API_URL = 'http://localhost:4000/api/generos';
+  const API_URL = 'https://proyecto-integrado-2-backend.onrender.com/api/generos';
 
   // 1. READ (Leer)
   const cargarGeneros = () => {

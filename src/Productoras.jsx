@@ -11,7 +11,7 @@ export default function Productoras() {
     descripcion: ''
   });
 
-  const API_URL = 'http://localhost:4000/api/productoras';
+  const API_URL = 'https://proyecto-integrado-2-backend.onrender.com/api/productoras';
 
   const cargarProductoras = () => {
     fetch(API_URL)
