@@ -5,11 +5,11 @@ export default function Directores() {
   const [showModal, setShowModal] = useState(false);
   const [editId, setEditId] = useState(null);
   const [formData, setFormData] = useState({
-    nombres: '', // Cambia a 'nombre' si así está en tu modelo de MongoDB
+    nombres: '',
     estado: 'Activo'
   });
 
-  const API_URL = 'http://localhost:4000/api/directores'; // Verifica si en tu backend es /directores o /directors
+  const API_URL = 'https://proyecto-integrado-2-backend.onrender.com/api/directores';
 
   const cargarDirectores = () => {
     fetch(API_URL)
